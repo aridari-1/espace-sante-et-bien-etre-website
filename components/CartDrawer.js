@@ -24,7 +24,7 @@ export default function CartDrawer({ isOpen, onClose }) {
           left: 0,
           width: "100%",
           height: "100%",
-          background: "rgba(0,0,0,0.2)",
+          background: "rgba(0,0,0,0.25)",
           zIndex: 999,
         }}
       />
@@ -37,7 +37,8 @@ export default function CartDrawer({ isOpen, onClose }) {
           right: 0,
           width: "min(380px, 100%)",
           height: "100%",
-          background: "var(--card)",
+          background: "#ffffff", // ✅ FORCE WHITE
+          borderLeft: "1px solid var(--border)",
           boxShadow: "var(--shadow-medium)",
           padding: "20px",
           zIndex: 1000,
@@ -116,7 +117,10 @@ export default function CartDrawer({ isOpen, onClose }) {
         {/* 💎 ACTIONS */}
         <div style={{ marginTop: "20px" }}>
           <Link href="/panier">
-            <button className="btn-primary">
+            <button
+              className="btn-primary"
+              onClick={onClose} // ✅ CLOSE DRAWER ON CLICK
+            >
               Voir le panier
             </button>
           </Link>
@@ -127,7 +131,7 @@ export default function CartDrawer({ isOpen, onClose }) {
               marginTop: "10px",
               width: "100%",
               padding: "12px",
-              background: "var(--card)",
+              background: "#ffffff",
               border: "1px solid var(--border)",
               borderRadius: "var(--radius-sm)",
               cursor: "pointer",
