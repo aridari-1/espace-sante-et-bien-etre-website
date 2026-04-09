@@ -1,0 +1,58 @@
+:root {
+  /* =========================
+     CORE COLORS
+  ========================= */
+  --bg: #f9f7f4;           /* soft luxury background */
+  --card: #ffffff;
+  --text: #111111;
+  --muted: #6f6f6f;
+  --border: #ececec;
+
+  /* =========================
+     BRAND (LUXURY GOLD)
+  ========================= */
+  --gold: #c8a96a;
+  --gold-dark: #b8964f;
+  --gold-light: #e6d3a3;
+
+  /* =========================
+     ACCENT COLORS
+  ========================= */
+  --success: #25D366;      /* WhatsApp */
+  --danger: #e5484d;
+
+  /* =========================
+     SHADOWS (PREMIUM FEEL)
+  ========================= */
+  --shadow-soft: 0 10px 30px rgba(0,0,0,0.05);
+  --shadow-medium: 0 15px 40px rgba(0,0,0,0.08);
+  --shadow-strong: 0 20px 50px rgba(0,0,0,0.12);
+
+  /* =========================
+     BORDER RADIUS
+  ========================= */
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 20px;
+
+  /* =========================
+     TRANSITIONS
+  ========================= */
+  --transition: all 0.3s ease;
+}
+
+/* =========================
+   DARK MODE READY (FUTURE)
+========================= */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0f0f0f;
+    --card: #1a1a1a;
+    --text: #f5f5f5;
+    --muted: #aaaaaa;
+    --border: #2a2a2a;
+
+    --gold: #d4b978;
+    --gold-dark: #bfa15f;
+  }
+}
